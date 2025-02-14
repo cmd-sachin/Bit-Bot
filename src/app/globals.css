@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Variables & Dark Mode Support */
+:root {
+  --background: #4379f2;
+  --foreground: #000607;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #d2d4d7;
+    --foreground: #ededed;
+  }
+}
+
+/* Body Styles */
+body {
+  background-image: url("/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--foreground);
+  font-family: "Space Grotesk", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar (Navigation & Innovative Section) */
+aside {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Sidebar Headings */
+aside h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+/* Sidebar Navigation Links */
+aside nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--foreground);
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  transition: color 0.2s ease;
+}
+
+aside nav a:hover {
+  color: #1e88e5;
+}
+
+/* Innovative Section (BIT Insider) */
+.innovative-section {
+  background-color: #e6f0ff;
+  border: 1px solid #c0d8ff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 0.875rem;
+  color: #1e3a8a;
+}
+
+/* Main Content Area Header */
+header {
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-bottom: 2px solid #393e46;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Styling */
+header img {
+  height: 3rem;
+  width: auto;
+}
+
+/* Title Styling */
+header h1 {
+  font-family: "Protest Guerrilla", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: var(--foreground);
+  margin: 0;
+}
+
+/* Custom Select Styling */
+header select {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #2a6ae0;
+  border-radius: 0.375rem;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease;
+}
+
+header select:hover {
+  border-color: #1e88e5;
+}
+
+/* Chat Messages Area */
+.chat-messages {
+  background: linear-gradient(to bottom, #f7fafc, #edf2f7);
+}
+
+/* Chat Input Section */
+.chat-input {
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  padding: 1rem;
+}
+
+/* Utility Classes Enhancements */
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-xl {
+  border-radius: 1rem;
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
